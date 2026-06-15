@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance CSS</title>
+    <style>
+      .with-scale {
+        width: 150px;
+        height: 100px;
+        background-color: bisque;
+        margin: 50px;
+        text-align: center;
+        padding: 10px;
+        overflow: auto;
+      }
+      .with-scale:hover {
+        background-color: blue;
+        /* transform: scale(120%); */
+        transform: scale(1.5, 2);
+      }
+      div {
+        width: 200px;
+        height: 100px;
+        background-color: aqua;
+        margin-left: 50px;
+      }
+      .div1 {
+        background-color: rgb(251, 212, 84);
+        transform: skewX(20deg);
+      }
+      .div2 {
+        background-color: rgb(60, 251, 38);
+        transform: skewX(-20deg);
+      }
+      .div3 {
+        background-color: rgb(15, 146, 0);
+        transform: skewY(20deg);
+      }
+      .div4 {
+        background-color: rgb(0, 184, 193);
+        transform: skewY(-20deg);
+      }
+      .demo1:hover {
+        background-color: blueviolet;
+        transform: translate(20px, 20px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="with-scale">Increase width & height 120%</div>
+
+    <div class="demo1">Normal Skew</div>
+    <div class="div1">SkewX 20 Deg</div>
+    <div class="div2">SkewX -20 Deg</div>
+    <div class="div3">SkewY -20 Deg</div>
+    <div class="div4">SkewY -20 Deg</div>
+  </body>
+</html>

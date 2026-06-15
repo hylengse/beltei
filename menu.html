@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <style>
+      #sub_menu nav ul li {
+        list-style-type: none;
+        display: block;
+        background-color: rgb(219, 221, 221);
+        width: 150px;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        border: 1px red solid;
+      }
+      #sub_menu nav a {
+        color: brown;
+        text-decoration: none;
+      }
+      #sub_menu nav ul li:hover,
+      #sub_menu nav a:hover {
+        background-color: aqua;
+        cursor: pointer;
+        color: black;
+        /* border-radius: 50px; */
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+      #sub_menu ul ul {
+        display: none;
+        position: absolute;
+        left: 180px;
+        top: 55px;
+      }
+      #sub_menu ul li:hover ul {
+        display: block;
+      }
+      .sub2 {
+        margin-top: 160px;
+      }
+
+      #menu nav ul {
+        list-style-type: none;
+        display: flex;
+        background-color: rgb(189, 239, 248);
+        padding: 0px;
+      }
+      #menu nav ul li a {
+        display: block;
+        padding: 15px 30px;
+        text-decoration: none;
+        color: red;
+      }
+      #menu nav ul li a:hover {
+        background-color: rgb(0, 255, 106);
+        color: #000;
+        text-decoration: underline;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+      #menu li ul {
+        display: none;
+        position: absolute;
+        width: 180px;
+        text-align: center;
+      }
+      #menu ul li:hover ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sub_menu" class="hhh">
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li>
+            <a href="">Product</a>
+            <ul>
+              <li><a href="">Dell</a></li>
+              <li><a href="">Acer</a></li>
+              <li><a href="">Asus</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Service</a>
+            <ul>
+              <li><a href="">Computer Repair</a></li>
+              <li><a href="">Web Solution</a></li>
+            </ul>
+          </li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About Us</a></li>
+          <li>
+            <a href="">Site map</a>
+            <ul class="sub2">
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Youtube</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="menu">
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li>
+            <a href="">Product</a>
+            <ul>
+              <li><a href="">Dell</a></li>
+              <li><a href="">Acer</a></li>
+              <li><a href="">Asus</a></li>
+              <li><a href="">Sony</a></li>
+              <li><a href="">PH</a></li>
+            </ul>
+          </li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Site Map</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

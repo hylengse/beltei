@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="" />
+    <style>
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(179, 255, 255);
+        padding: 10px;
+        text-align: center;
+        position: static;
+        margin: 10px;
+        float: left;
+      }
+      .box2 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(147, 255, 210);
+        padding: 10px;
+        text-align: center;
+        position: static;
+        clear: both;
+      }
+      .box3 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(246, 94, 6);
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        top: 100px;
+        right: 200px;
+      }
+      .row1 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(250, 241, 137);
+        padding: 10px;
+        text-align: center;
+        position: static;
+      }
+      .row2 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(137, 199, 250);
+        padding: 10px;
+        text-align: center;
+        top: 50px;
+        left: 50px;
+        /* margin-top: 50px; */
+        position: relative;
+      }
+      .row3 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(250, 137, 231);
+        padding: 10px;
+        text-align: center;
+        position: static;
+      }
+      .sticky {
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: #cae8ca;
+        border: 2px solid #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row1">Row One</div>
+    <div class="row2">Row Two</div>
+    <div class="row3">Row Three</div>
+
+    <br />
+
+    <div class="box1">Box One</div>
+    <div class="box1">Box One</div>
+    <div class="box1">Box One</div>
+
+    <div class="box1">Box One</div>
+    <div class="box1">Box One</div>
+    <div class="box1">Box One</div>
+
+    <div class="box3">Box Three</div>
+
+    <div class="box2">Box Two</div>
+    <div class="box2">Box Two</div>
+    <div class="box2">Box Two</div>
+    <br />
+    <div class="sticky">I have position sticky!</div>
+    <br />
+    <div class="box2">Box Two</div>
+    <div class="box2">Box Two</div>
+    <div class="box2">Box Two</div>
+    <div class="box2">Box Two</div>
+    <div class="box2">Box Two</div>
+    <div class="box2">Box Two</div>
+    <div class="box2">Box Two</div>
+    <div class="box2">Box Two</div>
+    <div class="box2">Box Two</div>
+    <div class="box2">Box Two</div>
+    <div class="box2">Box Two</div>
+  </body>
+</html>

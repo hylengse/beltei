@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-div {
+        width: 200px;
+        height: 200px;
+        border: 2px red dotted;
+        border-radius: 50%;
+        margin: 100px;
+        text-align: center;
+        padding: 20px;
+      }
+      .multiple-transform {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: rgb(26, 255, 0, 0.2);
+        /* transition: transform 3s linear; */
+        transition-delay: 2s;
+        transition-duration: 3s;
+      }
+      .multiple-transform:hover {
+        background-color: tomato;
+        transform: rotate(360deg) scale(1.5) skewY(-20deg);
+      }
+      img {
+        opacity: 0.3;
+        transition: transform 3s linear;
+      }
+      img:hover {
+        transform: rotate(360deg);
+      }
+      div {
+        width: 200px;
+        height: 70px;
+        background-color: aqua;
+        margin: 5px;
+        padding: 20px;
+        text-align: center;
+        transition: width 3s, height 4s, background-color 4s, border 5s;
+      }
+      .div1:hover {
+        width: 300px;
+        height: 150px;
+        background-color: red;
+        border: 3px greenyellow dotted;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Transition Normal</div>
+    <div class="div1">Transform Width & Height</div>
+    <br /><br />
+    <img src="photo/msi.png" width="200" />
+    <div class="main-div">
+      <div class="multiple-transform"></div>
+    </div>
+  </body>
+</html>

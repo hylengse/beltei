@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Screen</title>
+
+    <style>
+      @font-face {
+        font-family: "title";
+        src: url("fonts/KonkhmerSleokchher-Regular.ttf");
+      }
+      h1 {
+        font-family: "title";
+      }
+      .box {
+        width: 1000px;
+        height: 800px;
+        background-color: aqua;
+        text-align: center;
+      }
+      .img {
+        width: 600px;
+      }
+      @media screen and (max-width: 1200px) {
+        .box {
+          width: 800px;
+          height: 600px;
+          background-color: rgb(36, 242, 0);
+          text-align: center;
+        }
+        .img {
+          width: 450px;
+        }
+      }
+      @media screen and (max-width: 720px) {
+        .box {
+          width: 500px;
+          height: 350px;
+          background-color: rgb(242, 0, 157);
+          text-align: center;
+        }
+        .img {
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>រាត្រីសួស្តីអ្នកទាំងអស់គ្នា</h1>
+      <h3>Responsive Layout</h3>
+      <img src="photo/boy.png" class="img" />
+    </div>
+  </body>
+</html>
